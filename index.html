@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Felicia Rivera</title>
+
+    <!-- CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Profil Mahasiswa</h1>
+        <p>Praktikum Pemrograman Antarmuka Pengguna</p>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#student-id">Student ID</a>
+        <a href="#jadwal">Jadwal</a>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- PROFIL -->
+        <section id="profil">
+
+            <article class="profile">
+
+                <!-- FOTO -->
+                <div class="photo">
+                    <img src="image/profilepict.png" alt="Foto Felicia Rivera">
+                </div>
+
+
+                <!-- INFORMASI PROFIL -->
+                <div class="profile-info">
+
+                    <h2>Felicia Rivera</h2>
+
+                    <p>
+                        Mahasiswa <strong>Sistem Informasi</strong> yang memiliki
+                        ketertarikan pada pengembangan website dan desain
+                        antarmuka pengguna.
+                    </p>
+
+                    <!-- LIST KEAHLIAN -->
+                    <div id="keahlian">
+
+                        <h3>Keahlian & Minat</h3>
+
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- STUDENT ID -->
+        <section id="student-id">
+
+            <h2>Student ID</h2>
+
+            <p>
+                Klik tombol untuk menampilkan atau menghapus ID mahasiswa.
+            </p>
+
+
+            <!-- TOMBOL -->
+            <div class="button-container">
+
+                <button id="tampilButton">
+                    Tampilkan ID
+                </button>
+
+                <button id="hapusButton">
+                    Hapus ID
+                </button>
+
+            </div>
+
+
+            <!-- TEMPAT ID DITAMPILKAN -->
+            <div id="id-container"></div>
+
+        </section>
+
+
+        <!-- JADWAL KULIAH -->
+        <section id="jadwal">
+
+            <h2>Jadwal Mata Kuliah</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <!-- JUDUL TABEL -->
+                    <thead>
+
+                        <tr>
+                            <th colspan="7">
+                                Jadwal Mata Kuliah Semester 3
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>No</th>
+                            <th>Hari</th>
+                            <th>Kode</th>
+                            <th>Mata Kuliah</th>
+                            <th>Kelas</th>
+                            <th>Dosen Pengajar</th>
+                            <th>Ruang</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <!-- ISI TABEL -->
+                    <tbody>
+
+                        <!-- Jumat -->
+                        <tr>
+                            <td>1</td>
+                            <td rowspan="1">Jumat</td>
+                            <td class="kode">SI23028</td>
+                            <td>
+                                <strong>Jaringan Komputer</strong><br>
+                                dan Komputasi Awan
+                            </td>
+                            <td>A</td>
+                            <td>Rifky Kurniawan</td>
+                            <td>R0904</td>
+                        </tr>
+
+
+                        <!-- Selasa -->
+                        <tr>
+                            <td>2</td>
+                            <td rowspan="2">Selasa</td>
+                            <td class="kode">SI23034</td>
+                            <td>
+                                <strong>Pemrograman</strong><br>
+                                Berbasis Objek
+                            </td>
+                            <td>A</td>
+                            <td>Lely Hiryanto</td>
+                            <td>R0905</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>3</td>
+                            <td class="kode">SI23035</td>
+                            <td>
+                                <strong>Pemrograman Antarmuka</strong><br>
+                                Pengguna
+                            </td>
+                            <td>A</td>
+                            <td>Irvan Lewenusa</td>
+                            <td>R1007</td>
+                        </tr>
+
+
+                        <!-- Rabu -->
+                        <tr>
+                            <td>4</td>
+                            <td rowspan="1">Rabu</td>
+                            <td class="kode">SI23037</td>
+                            <td>
+                                <strong>Metodologi Penelitian</strong><br>
+                                dan Etika Digital
+                            </td>
+                            <td>A</td>
+                            <td>Tony</td>
+                            <td>R0702</td>
+                        </tr>
+
+
+                        <!-- Kamis -->
+                        <tr>
+                            <td>5</td>
+                            <td rowspan="1">Kamis</td>
+                            <td class="kode">SI23040</td>
+                            <td>
+                                <strong>Analisis dan Perancangan</strong><br>
+                                Sistem Informasi
+                            </td>
+                            <td>A</td>
+                            <td>Ery Dewayani</td>
+                            <td>R0805</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Felicia Rivera</p>
+        <p>Pemrograman Antarmuka Pengguna</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT EKSTERNAL -->
+    <script src="script.js"></script>
+
+</body>
+</html>
